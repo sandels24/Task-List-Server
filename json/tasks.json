@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "name": "Water the plants",
+    "description": "Please water the plants in morning evening and night."
+  },
+  {
+    "id": 2,
+    "name": "Go Shopping",
+    "description": "Please go shopping in morning evening and night."
+  },
+  {
+    "id": 3,
+    "name": "Dinner Time",
+    "description": "Please eat dinner at 9.00PM"
+  },
+  {
+    "id": 4,
+    "name": "Lunch Time",
+    "description": "Please water the plants in morning evening and night."
+  },
+  {
+    "id": 5,
+    "name": "Go Para gliding",
+    "description": "Please water the plants in morning evening and night."
+  },
+  {
+    "id": 6,
+    "name": "Get Out and play",
+    "description": "Please water the plants in morning evening and night."
+  },
+  {
+    "id": 7,
+    "name": "Read the book",
+    "description": "Please water the plants in morning evening and night."
+  },
+  {
+    "id": 8,
+    "name": "Take a walk",
+    "description": "Please water the plants in morning evening and night."
+  }
+]
