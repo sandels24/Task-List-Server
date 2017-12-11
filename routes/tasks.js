@@ -2,7 +2,7 @@ var express = require('express');
 var router = express.Router();
 var mongojs = require('mongojs');
 var json = require('../json/tasks.json');
-var db = mongojs('mongodb://saiteja:saiteja@ds129966.mlab.com:29966/tasklist',['tasks']);
+// var db = mongojs('mongodb://saiteja:saiteja@ds129966.mlab.com:29966/tasklist',['tasks']);
 
 var tasks = json;
 //get all the tasks
@@ -36,11 +36,8 @@ router.post('/task',function (req,res,next) {
 //delete tasks
 router.delete('/task/:id',function (req,res,next) {
     var i;
-    console.log(req.params.id);
-
     for (var x = 0; x < tasks.length; x++) {
         if (req.params.id == tasks[x].id) {
-            console.log(req.body);
             i = x;
         }
     }
@@ -53,7 +50,6 @@ router.put('/task/:id',function (req,res,next) {
    var update = req.body;
     for (var x = 0; x < tasks.length; x++) {
         if (req.params.id == tasks[x].id) {
-            console.log(req.body);
             tasks[x] = update;
         }
     }
