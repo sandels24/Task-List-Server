@@ -9,6 +9,7 @@ pipeline {
          stage('Build') {
             steps {
                 echo 'Building..'
+                bat'npm install'
                 bat'node app.js'
             }
         }
