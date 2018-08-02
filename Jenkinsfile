@@ -6,5 +6,11 @@ pipeline {
                 checkout scm
             }
         }
+         stage('Build') {
+            steps {
+                echo 'Building..'
+                bat'node app.js'
+            }
+        }
     }
 }
